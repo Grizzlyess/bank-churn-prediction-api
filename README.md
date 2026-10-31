@@ -4,19 +4,19 @@ Este projeto é uma API RESTful desenvolvida para servir um modelo de Machine Le
 
 O foco deste repositório é demonstrar o ciclo completo de **MLOps e Engenharia de Software para IA**, desde o treino do modelo preditivo até ao seu empacotamento e disponibilização em produção através de contentores Docker.
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 *   **Machine Learning:** Python, Pandas, Scikit-Learn (Random Forest)
 *   **API & Backend:** FastAPI, Uvicorn, Pydantic
 *   **Infraestrutura & MLOps:** Docker, Ambientes Virtuais (venv)
 
-## ⚙️ Arquitetura do Projeto
+## Arquitetura do Projeto
 
 O projeto está dividido em duas fases principais:
 1.  **Treino do Modelo (`treino.py`):** Processa os dados tabulares (idade, saldo) e treina um classificador Random Forest, exportando o modelo finalizado (ficheiro `.pkl`) utilizando a biblioteca `pickle`.
 2.  **API de Inferência (`api/main.py`):** Um microsserviço construído com FastAPI que carrega o modelo pré-treinado para a memória. O endpoint recebe os dados de novos clientes via JSON, converte-os utilizando o Pandas e devolve a predição em tempo real.
 
-## 🚀 Como Executar o Projeto
+## Como Executar o Projeto
 
 A forma recomendada de correr a aplicação é através do **Docker**, garantindo que o ambiente está totalmente isolado e reproduzível.
 
@@ -32,7 +32,7 @@ A forma recomendada de correr a aplicação é através do **Docker**, garantind
    sudo docker run -d -p 8000:8000 churn-api
    ```
 4. Aceda à documentação interativa (Swagger UI) no navegador: 
-   👉 **http://localhost:8000/docs**
+   **http://localhost:8000/docs**
 
 ### Opção 2: Execução Local (Ambiente Virtual)
 
