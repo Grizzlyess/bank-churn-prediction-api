@@ -76,7 +76,7 @@ Recebe os dados do cliente e devolve a predição de churn.
 }
 ```
 
-## 🔭 Próximos Passos (Roadmap)
+## Próximos Passos (Roadmap)
 *   [ ] Integrar o dataset completo do Kaggle (Bank Customer Churn) com milhares de registos reais.
 *   [ ] Criar um Jupyter Notebook (`.ipynb`) detalhando a Análise Exploratória de Dados (EDA).
 *   [ ] Implementar métricas de avaliação do modelo (F1-Score, Matriz de Confusão).
